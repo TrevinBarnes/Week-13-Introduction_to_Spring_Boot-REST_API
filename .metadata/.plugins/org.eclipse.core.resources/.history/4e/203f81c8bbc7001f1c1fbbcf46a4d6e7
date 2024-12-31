@@ -1,0 +1,7 @@
+package pet.store.entity;
+
+@ManyToMany(mappedBy = "customers", cascade = CascadeType.PERSIST)
+
+public class Customer {
+
+}

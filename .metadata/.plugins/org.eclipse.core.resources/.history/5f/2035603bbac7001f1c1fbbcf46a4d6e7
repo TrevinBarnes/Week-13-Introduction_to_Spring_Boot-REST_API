@@ -1,0 +1,8 @@
+package pet.store.entity;
+
+import jakarta.persistence;
+
+@Entity(jakarta.persistence)class-levelannotations
+public class PetStore {
+
+}

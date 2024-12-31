@@ -1,0 +1,26 @@
+package pet.store.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Embeddable;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@Table(name = "customer")
+public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "customer_name")
+    private String name;
+
+    @Column(name = "customer_email")
+    private String email;
+
+    @ManyToMany(mappedBy = "customers", cascade = CascadeType.PERSIST)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private Set<PetStore> petStores;
+}

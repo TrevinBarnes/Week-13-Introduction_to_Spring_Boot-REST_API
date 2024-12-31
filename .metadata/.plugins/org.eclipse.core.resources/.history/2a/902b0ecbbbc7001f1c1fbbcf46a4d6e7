@@ -1,0 +1,18 @@
+package pet.store.entity;
+
+@ManyToOne(cascade = CascadeType.ALL)
+@JoinColumn(name = "pet_store_id")
+
+public class PetStore {
+	
+	
+	@Entity
+	jakarta.persistenceclass-levelannotations.
+	@Data
+	lombokclass-levelannotations.
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

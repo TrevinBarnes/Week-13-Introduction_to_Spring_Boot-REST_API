@@ -1,0 +1,5 @@
+package jakarta;
+
+public @interface persistence {
+
+}
